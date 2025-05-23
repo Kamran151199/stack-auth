@@ -14,7 +14,6 @@ node-compile-cache/
 # Misc
 .DS_Store
 .eslintcache
-.env.local
 .env.*.local
 scratch/
 
@@ -49,7 +48,6 @@ dist
 /.vs/slnx.sqlite-journal
 /.vs/slnx.sqlite
 /.vs
-.vscode/generated*
 
 # Jetbrains
 .idea
@@ -133,3 +131,4 @@ packages/stack/*
 !packages/react/package.json
 !packages/next/package.json
 !packages/stack/package.json
+config.bat

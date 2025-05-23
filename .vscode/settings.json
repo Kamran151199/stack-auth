@@ -1,158 +1,23 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
+  "search.exclude": {
+    "**/.sst": true
+  },
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.tabSize": 2,
-  "cSpell.words": [
-    "autoupdate",
-    "backlinks",
-    "Cancelation",
-    "Cdfc",
-    "checksummable",
-    "chinthakagodawita",
-    "cjsx",
-    "clsx",
-    "cmdk",
-    "codegen",
-    "crockford",
-    "Crudl",
-    "ctsx",
-    "datapoints",
-    "deindent",
-    "Deindentable",
-    "deindented",
-    "DUMBASS",
-    "EAUTH",
-    "EDNS",
-    "EENVELOPE",
-    "EMESSAGE",
-    "Falsey",
-    "fkey",
-    "frontends",
-    "geoip",
-    "hookform",
-    "hostable",
-    "INBUCKET",
-    "ipcountry",
-    "Jwks",
-    "JWTs",
-    "katex",
-    "lucide",
-    "Luma",
-    "midfix",
-    "Millis",
-    "mjsx",
-    "mtsx",
-    "neondatabase",
-    "nextjs",
-    "Nicifiable",
-    "nicification",
-    "nicified",
-    "nicify",
-    "oidc",
-    "openapi",
-    "opentelemetry",
-    "otel",
-    "otlp",
-    "pageleave",
-    "pageview",
-    "pg_isready",
-    "pkcco",
-    "PKCE",
-    "pkey",
-    "pooler",
-    "posthog",
-    "preconfigured",
-    "Proxied",
-    "psql",
-    "qrcode",
-    "quetzallabs",
-    "rehype",
-    "reqs",
-    "retryable",
-    "RPID",
-    "simplewebauthn",
-    "spoofable",
-    "stackauth",
-    "stackframe",
-    "sucky",
-    "supabase",
-    "Svix",
-    "tailwindcss",
-    "tanstack",
-    "totp",
-    "tsup",
-    "typecheck",
-    "typehack",
-    "Uncapitalize",
-    "unindexed",
-    "unsubscribers",
-    "upsert",
-    "webapi",
-    "webauthn",
-    "Whitespaces",
-    "wolfgunblood",
-    "zustand"
-  ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"    
-  },
-  "terminal.integrated.wordSeparators": " (){}',\"`─‘’“”|",
-  "editor.formatOnSave": false,
-  "[prisma]": {
-    "editor.formatOnSave": true,
-  },
-  "prettier.enable": false,
-  "debug.javascript.autoAttachSmartPattern": [
-    "${workspaceFolder}/**",
-    "!**/node_modules/**",
-    "**/$KNOWN_TOOLS$/**",
-    "**/start-server.js",
-    "**/turbo/**"
-  ],
-  "files.insertFinalNewline": true,
-  "highlight.regexes": {
-    "(import\\.meta\\.vitest\\?\\.test\\()[\"'`]([^\"'`]*)(.*)": [
-      {
-        "isWholeLine": true,
-        "before": {
-          "contentText": "test>  ",
-          "color": "#008080",
-          "fontStyle": "italic"
-        },
-      }
-    ],
-    "((?<=(?:import\\.meta\\.vitest\\?\\.test\\(.*\\n)(?:(?!(\\n\\}?\\);))[\\s\\S])*))\\n": [
-      {
-        "isWholeLine": true,
-        "before": {
-          "contentText": "       ",
-          "color": "#008080",
-          "fontStyle": "italic"
-        },
-      },
-    ],
-    "(import\\.meta\\.vitest\\?\\.test\\([\\s\\S]*?(\\n\\}?\\);))": [
-      {},
-      {
-        "isWholeLine": true,
-        "before": {
-          "contentText": "       ",
-          "color": "#008080",
-          "fontStyle": "italic"
-        },
-      },
-    ],
-    // disable the default TODO highlighting
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": [],
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": [],
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": [],
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": [],
-  },
-  "editor.formatOnSaveMode": "file",
-  "git.ignoreLimitWarning": true
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
